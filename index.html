@@ -6,13 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Procedural terrain generation</title>
-
+    
+    <link rel="icon" href="./images/craftblock.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="src/style.css">
     <script src="libraries/p5.min.js"></script>
 </head>
 
 <body>
+    <center>
+        <div class="container">
+            <main> 
+                <h1>
+                    <img src="./images/craftblock.png" width="70">
+                    Procedural Terrain Generation
+                </h1>
+
+            </main>
+            <button class='btn' onclick='reload()'>Reload</button>
+        </div>
+    </center>
+
     <script src="src/modules/terrain.js"></script>
+    <script src="src/modules/map.controller.js"></script>
+
     <script src="src/sketch.js"></script>
 </body>
 

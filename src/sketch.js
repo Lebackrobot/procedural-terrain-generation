@@ -1,9 +1,14 @@
-// Get window resolution
-const width = window.innerWidth
-const heigth = 0.95 * window.innerHeight
+const width =  Math.floor(0.80 * window.innerWidth)
+const heigth = Math.floor(0.70 * window.innerHeight)
 
 let zoomFactor = 170
 let mapChanged = true
+
+const reload = () => {
+    clear()
+    mapChanged = true
+    setup()
+}
 
 function setup() {
     createCanvas(width, heigth)
@@ -20,6 +25,9 @@ function getY(y) {
 }
 
 function draw() {
+    noiseSeed(Date.now())
+
+
     if (!mapChanged) {
         return
     }
@@ -46,5 +54,4 @@ function draw() {
     
     updatePixels()
     mapChanged = false;
-
 }

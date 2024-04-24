@@ -1,10 +1,31 @@
-html, body {
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('../fonts/Minecraftia-Regular.ttf') format('truetype');
+}
+
+body {
     margin: 0;
     padding: 0;
-    overflow: hidden !important;
+    background-color: #f0f0f0;
+    font-family: 'Minecraftia', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
 }
 
 canvas {
-    display: block;
-    overflow: hidden;
+    border: 1px solid black;
+}
+
+.btn {
+    font-family: 'Minecraftia', Arial, sans-serif;
+    padding: 10px;
+    margin-top:10px;
+    background-color: #c4bdbd;
+    width: 80vw
 }
