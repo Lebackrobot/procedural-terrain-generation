@@ -27,5 +27,6 @@ canvas {
     padding: 10px;
     margin-top:10px;
     background-color: #c4bdbd;
-    width: 80vw
+    width: 80vw;
+    color: black;
 }
