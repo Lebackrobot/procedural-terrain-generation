@@ -28,5 +28,5 @@ canvas {
     margin-top:10px;
     background-color: #c4bdbd;
     width: 80vw;
-    color: black;
+    color: black !important;
 }
