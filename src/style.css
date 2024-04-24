@@ -3,6 +3,16 @@
     src: url('../fonts/Minecraftia-Regular.ttf') format('truetype');
 }
 
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    img {
+        width: 50px
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
