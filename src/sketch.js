@@ -1,10 +1,11 @@
 const width =  Math.floor(0.80 * window.innerWidth)
 const heigth = Math.floor(0.70 * window.innerHeight)
 
-let zoomFactor = 160
+let zoomFactor = 150
 let mapChanged = true
 
 const reload = () => {
+    console.log(zoomFactor)
     clear()
     mapChanged = true
     draw()
@@ -25,6 +26,7 @@ function getY(y) {
 }
 
 function draw() {
+    zoomFactor = width <= 600 ? 120 : zoomFactor
     noiseSeed(Date.now())
 
 
