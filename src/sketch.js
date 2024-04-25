@@ -1,13 +1,13 @@
 const width =  Math.floor(0.80 * window.innerWidth)
 const heigth = Math.floor(0.70 * window.innerHeight)
 
-let zoomFactor = 170
+let zoomFactor = 160
 let mapChanged = true
 
 const reload = () => {
     clear()
     mapChanged = true
-    setup()
+    draw()
 }
 
 function setup() {

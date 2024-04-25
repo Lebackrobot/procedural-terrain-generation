@@ -3,13 +3,18 @@
     src: url('../fonts/Minecraftia-Regular.ttf') format('truetype');
 }
 
+h1 {
+    padding-top:0px;
+    margin-top: 0px
+}
+
 @media only screen and (max-width: 600px) {
     h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     img {
-        width: 50px
+        width: 45px
     }
 }
 
@@ -22,10 +27,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.container {
-    text-align: center;
 }
 
 canvas {
